@@ -58,9 +58,9 @@ The application is divided into two versions:
     To mitigate this vulnerability, we switched to parameterized queries (prepared statements) where user input is treated as data, not code.  making it impossible to inject arbitrary SQL commands.
 
 *Testing* :
-    1. Go to the login page (/login).
-    2. In the username field, enter: ' OR 1=1 --.
-    3. Enter anything in the password field.
+1. Go to the login page (/login).
+2. In the username field, enter: ' OR 1=1 --.
+3. Enter anything in the password field.
         
   Expected results:
 
