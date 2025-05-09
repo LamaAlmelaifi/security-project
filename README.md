@@ -77,9 +77,9 @@ The application is divided into two versions:
     To mitigate this, we used bcrypt, a slow, salted hashing algorithm. bcrypt automatically adds a unique salt to each password, making it much more difficult to crack via brute-force or precomputed attacks.
 
 *Testing*:
-    1- Go to the registration page (/register).
-    2- Register a new account with a simple password.
-    3- Use a password cracking tool like hashcat or John the Ripper to attempt to crack the hashed password stored in the database.
+1. Go to the registration page (/register).
+2. Register a new account with a simple password.
+3. Use a password cracking tool like hashcat or John the Ripper to attempt to crack the hashed password stored in the database.
 
   Expected Results:
 
@@ -97,10 +97,9 @@ The application is divided into two versions:
     To mitigate this, user input is properly sanitized and escaped before being displayed. This ensures that any HTML or JavaScript code entered by the user is rendered as plain text rather than executable code.
 
 *Testing*:
-    1- Go to the dashboard page (/dashboard).
-    2- In the comment form, enter the following:
-        <script>alert('XSS Attack!')</script>
-    3- Submit the comment.
+1. Go to the dashboard page (/dashboard).
+2. In the comment form, enter the following: <script>alert('XSS Attack!')</script>
+3. Submit the comment.
 
   Expected Results:
 
@@ -117,8 +116,8 @@ The application is divided into two versions:
     We implemented proper role-based access control (RBAC) by checking the user's role before granting access to sensitive pages, such as the admin panel.
 
 *Testing*:
-    1- Log in as a regular user.
-    2- Try to access the admin page (/admin) using the URL since the button is invisible by default for users.
+1. Log in as a regular user.
+2. Try to access the admin page (/admin) using the URL since the button is invisible by default for users.
 
   Expected Results:
 
@@ -137,9 +136,9 @@ The application is divided into two versions:
   For testing purposes, we created a self-signed certificate to enable HTTPS locally in the secure version of the application.
 
 *Testing*:
-    1- Open the browser's developer tools.
-    2- Go to the "Application" tab and inspect the cookies.
-    3- Look for the session cookie.
+1. Open the browser's developer tools.
+2. Go to the "Application" tab and inspect the cookies.
+3. Look for the session cookie.
 
   Expected Results:
 
