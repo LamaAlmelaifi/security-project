@@ -48,6 +48,8 @@ The application is divided into two versions:
 - **Vulnerable Version**: This version contains intentional security flaws to demonstrate various attack vectors.
 - **Secure Version**: This version includes all security improvements, applying best practices and protections.
 
+  The github repositery contains zipped files of each version of the website.
+
 ---
 ## SQL Injection
 
