@@ -62,7 +62,7 @@ The application is divided into two versions:
 2. In the username field, enter: ' OR 1=1 --.
 3. Enter anything in the password field.
         
-  Expected results:
+*Expected results*:
 
   - Vulnerable: The login will be successful even though the credentials are incorrect because the SQL query is vulnerable to injection. This will give attackers unauthorized access.
 
@@ -81,7 +81,7 @@ The application is divided into two versions:
 2. Register a new account with a simple password.
 3. Use a password cracking tool like hashcat or John the Ripper to attempt to crack the hashed password stored in the database.
 
-  Expected Results:
+*Expected Results*:
 
   - Vulnerable: The MD5 hash can be cracked quickly, allowing attackers to reveal the original password.
 
@@ -101,7 +101,7 @@ The application is divided into two versions:
 2. In the comment form, enter the following: <script>alert('XSS Attack!')</script>
 3. Submit the comment.
 
-  Expected Results:
+*Expected Results*:
 
   - Vulnerable: An alert box should pop up, indicating that JavaScript is executed in the browser, demonstrating the XSS vulnerability.
 
@@ -119,7 +119,7 @@ The application is divided into two versions:
 1. Log in as a regular user.
 2. Try to access the admin page (/admin) using the URL since the button is invisible by default for users.
 
-  Expected Results:
+*Expected Results*:
 
   - Vulnerable: You will be able to access the admin page even though you are not an administrator.
 
@@ -140,7 +140,7 @@ The application is divided into two versions:
 2. Go to the "Application" tab and inspect the cookies.
 3. Look for the session cookie.
 
-  Expected Results:
+*Expected Results*:
 
   - Vulnerable: The session cookie is visible to JavaScript and may be transmitted over unencrypted HTTP.
 
