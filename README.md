@@ -122,9 +122,9 @@ The application is divided into two versions:
 
   Expected Results:
 
-  -Vulnerable: You will be able to access the admin page even though you are not an administrator.
+  - Vulnerable: You will be able to access the admin page even though you are not an administrator.
 
-  -Secure: You should be redirected to the dashboard or see a message indicating insufficient permissions. Only users with the admin role will have access to the admin page.
+  - Secure: You should be redirected to the dashboard or see a message indicating insufficient permissions. Only users with the admin role will have access to the admin page.
 
 ## Encryption
 
@@ -143,9 +143,9 @@ The application is divided into two versions:
 
   Expected Results:
 
-  -Vulnerable: The session cookie is visible to JavaScript and may be transmitted over unencrypted HTTP.
+  - Vulnerable: The session cookie is visible to JavaScript and may be transmitted over unencrypted HTTP.
 
-  -Secure: The session cookie is marked as HttpOnly and Secure, and it will only be transmitted over HTTPS, making it secure against interception and XSS attacks.
+  - Secure: The session cookie is marked as HttpOnly and Secure, and it will only be transmitted over HTTPS, making it secure against interception and XSS attacks.
 
 
 ---
