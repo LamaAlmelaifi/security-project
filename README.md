@@ -7,10 +7,10 @@ In this project, we built a simple web application and secured it against common
 ---
 
 ## Team Members' Names/Student ID
-Lama Almelaifi/443200447
-Remas Alharbi/443200506
-Shahad Al-Hussain/443200850
-Fay Alfarraj/443201111
+- Lama Almelaifi/443200447
+- Remas Alharbi/443200506
+- Shahad Al-Hussain/443200850
+- Fay Alfarraj/443201111
 
 ---
 
